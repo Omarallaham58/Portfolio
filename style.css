@@ -45,10 +45,42 @@ body {
   }
   section{
     padding:20px;
+    
   }
-  img{
+  /* .about-image{
     padding:30px;
+    border-radius: 50%;
+    max-width: 200px;
+    
+  } */
+  .about-heading{
+    padding-bottom: 2px;
+    padding-left: 10px;
+
   }
+  .about-image {
+    display: inline-block;
+    border-radius: 50%;
+    max-width: 200px;
+    vertical-align: top;
+    /* padding-top: 2px; */
+    padding:15px;
+    margin-left:-34px;
+    /* margin:0; */
+    /* padding:30px; */
+    
+    
+
+  }
+  
+  .about-text {
+    display: inline-block;
+    width: calc(100% - 220px);
+    padding-left: 20px;
+    font-size: large;
+    padding-top: 40px;
+  }
+  
   progress{
     width: 25%;
     height: 20px;
@@ -63,3 +95,4 @@ body {
    div{
     padding-right: 15px;
    }
+   
