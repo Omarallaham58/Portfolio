@@ -4,8 +4,10 @@
   
   body {
     /* background-color: #121212; */
-    background-color: #3E3E3E;
-    color: #f1f1f1;
+    /* background-color: #3E3E3E; */
+    background-color: #f1f1f1;
+    /* color: #f1f1f1; */
+    color:#3E3E3E;
     margin: 0;
     font-family: Arial, sans-serif;
   }
@@ -15,7 +17,7 @@
     justify-content: space-between;
     align-items: center;
     /* background-color: #1c1c1c; */
-    background-color: #585858;
+    background-color: #2b2a2a;
     color: #fff;
     padding: 20px;
   }
@@ -29,21 +31,26 @@
     list-style: none;
     margin: 0;
     padding: 0;
+    color: #f1f1f1;
   }
   
   nav ul li {
     display: inline-block;
     margin-left: 20px;
+    color: #f1f1f1;
   }
   
   nav ul li a {
-    color: #fff;
+    /* color: #fff; */
+    /* color:#3E3E3E; */
+    color: #f1f1f1;
     text-decoration: none;
   }
   
   section {
     padding: 20px;
-    background-color: #1c1c1c;
+    /* background-color: #1c1c1c; */
+    background-color: #f1f1f1;
   }
   
   .about-heading {
@@ -107,17 +114,20 @@
   
   .contact-info {
     font-size: 16px;
-    color: #777;
+    /* color: #777; */
+    color:#3E3E3E;
     margin-top: 20px;
   }
   
   .contact-info a {
-    color: #777;
+    /* color: #777; */
+    color: #3E3E3E;
     text-decoration: none;
   }
   
   .contact-info a:hover {
-    color: #000;
+    /* color: #000; */
+    color:#3E3E3E;
   }
   /* .contact-ul{
     font-size: large;
@@ -132,8 +142,12 @@
     line-height: 50px;
   }
   footer {
-    background-color: #333;
-    color: #fff;
+    /* background-color: #333;
+    color: #fff; */
+    /* background-color: #f1f1f1;
+    color: #3E3E3E; */
+    background-color:#2b2a2a;
+    color:#fff;
     padding: 20px;
     text-align: center;
   }
