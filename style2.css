@@ -3,7 +3,6 @@
   }
   
   body {
-    /* background-color: #121212; */
     background-color: #3E3E3E;
     color: #f1f1f1;
     margin: 0;
@@ -14,7 +13,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* background-color: #1c1c1c; */
     background-color: #585858;
     color: #fff;
     padding: 20px;
@@ -68,10 +66,6 @@
     padding-top: 40px;
   }
   
-  /* progress {
-    width: 25%;
-    height: 20px;
-  } */
   progress{
     width:25%;
     height:20px;
@@ -119,12 +113,7 @@
   .contact-info a:hover {
     color: #000;
   }
-  /* .contact-ul{
-    font-size: large;
-    font-weight: bold;
-    padding:auto;
-    line-height: 50px;
-  } */
+  
   .contact-list{
     font-size: large;
     font-weight: bold;
@@ -140,6 +129,4 @@
   footer a{
     padding-left: 10px;
     padding-right: 10px;
-    /* height: 50%;
-    width: 50%; */
   }
