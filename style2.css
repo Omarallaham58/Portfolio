@@ -105,3 +105,41 @@
     height: 20px;
   }
   
+  .contact-info {
+    font-size: 16px;
+    color: #777;
+    margin-top: 20px;
+  }
+  
+  .contact-info a {
+    color: #777;
+    text-decoration: none;
+  }
+  
+  .contact-info a:hover {
+    color: #000;
+  }
+  /* .contact-ul{
+    font-size: large;
+    font-weight: bold;
+    padding:auto;
+    line-height: 50px;
+  } */
+  .contact-list{
+    font-size: large;
+    font-weight: bold;
+    padding: auto;
+    line-height: 50px;
+  }
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  footer a{
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 50%;
+    width: 50%;
+  }

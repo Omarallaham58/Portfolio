@@ -95,19 +95,4 @@ body {
    div{
     padding-right: 15px;
    }
-   .skill-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-  }
-  
-  .skill-grid div {
-    display: flex;
-    align-items: center;
-  }
-  
-  .skill-name {
-    width: 50px;
-    margin-right: 10px;
-  }
-  
+   
