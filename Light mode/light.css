@@ -3,10 +3,7 @@
   }
   
   body {
-    /* background-color: #121212; */
-    /* background-color: #3E3E3E; */
     background-color: #f1f1f1;
-    /* color: #f1f1f1; */
     color:#3E3E3E;
     margin: 0;
     font-family: Arial, sans-serif;
@@ -16,7 +13,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* background-color: #1c1c1c; */
     background-color: #2b2a2a;
     color: #fff;
     padding: 20px;
@@ -41,15 +37,12 @@
   }
   
   nav ul li a {
-    /* color: #fff; */
-    /* color:#3E3E3E; */
     color: #f1f1f1;
     text-decoration: none;
   }
   
   section {
     padding: 20px;
-    /* background-color: #1c1c1c; */
     background-color: #f1f1f1;
   }
   
@@ -74,11 +67,6 @@
     font-size: large;
     padding-top: 40px;
   }
-  
-  /* progress {
-    width: 25%;
-    height: 20px;
-  } */
   progress{
     width:25%;
     height:20px;
@@ -114,27 +102,18 @@
   
   .contact-info {
     font-size: 16px;
-    /* color: #777; */
     color:#3E3E3E;
     margin-top: 20px;
   }
   
   .contact-info a {
-    /* color: #777; */
     color: #3E3E3E;
     text-decoration: none;
   }
   
   .contact-info a:hover {
-    /* color: #000; */
     color:#3E3E3E;
   }
-  /* .contact-ul{
-    font-size: large;
-    font-weight: bold;
-    padding:auto;
-    line-height: 50px;
-  } */
   .contact-list{
     font-size: large;
     font-weight: bold;
@@ -142,10 +121,6 @@
     line-height: 50px;
   }
   footer {
-    /* background-color: #333;
-    color: #fff; */
-    /* background-color: #f1f1f1;
-    color: #3E3E3E; */
     background-color:#2b2a2a;
     color:#fff;
     padding: 20px;
@@ -154,6 +129,4 @@
   footer a{
     padding-left: 10px;
     padding-right: 10px;
-    /* height: 50%;
-    width: 50%; */
   }
