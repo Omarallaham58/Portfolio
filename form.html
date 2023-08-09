@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Page</title>
+  <link rel="stylesheet" href="./fill.css">
+  <script src="script.js"></script>
+</head>
+<body>
+    <header>
+  <h1>Fill The Following Form To Create Your Own Portfolio</h1>
+</header>
+  <form class="main" onsubmit="return checkInput(event)" action="./final.html">
+    <div class="form-group">
+      <label for="Name">Enter Your name:</label>
+      <input type="text" id="Name">
+    </div>
+    <br>
+    <div class="form-group">
+      <label for="about2">Write a brief description about your goals and acheivements:</label>
+      <textarea id="about2" rows="3" cols="30"></textarea>
+    </div>
+    <br>
+    <div class="form-group">
+      <label for="picUrl">Picture URL(Path) (Optional) (try to replace '\' with '/' if exist in case of entering local URL):</label>
+      <input type="text" id="picUrl" name="picUrl">
+    </div>
+    
+    <br>
+    <div class="form-group">
+        <label for="numEducation">Number of Education Fields:</label>
+        <input type="number" id="numEducation" min="1" max="4">
+        <button type="button" onclick="addEducation()">Add Fields</button>
+      </div>
+      <div id="EducationContainer"></div>
+      <br>
+      <div class="form-group">
+        <label for="numLanguage">Number of Languages:</label>
+        <input type="number" id="numLanguage" min="1" max="7">
+        <button type="button" onclick="addLanguage()">Add Languages</button>
+      </div>
+      <div id="LanguageContainer"></div>
+      <br>
+    <div class="form-group">
+      <label for="numSkills">Number of skills:</label>
+      <input type="number" id="numSkills" min="1" max="12">
+      <button type="button" onclick="addSkills()">Add Skills</button>
+    </div>
+    <div id="skillsContainer"></div>
+    <br>
+    <div class="form-group">
+      <label for="Location-description">Enter your location (optional)</label>
+      <input type="text" id="Location-description">
+    </div>
+    <br>
+    <div class="form-group">
+      <label for="Location-URL">Enter the URL of your location (optional)(you should enter a description to enter a URL)</label>
+      <input type="text" id="Location-URL">
+    </div>
+    <br>
+    <div class="form-group">
+        <label for="phoneNb">Enter your phone number (optional)</label>
+        <input id="phone_nbr" type="text">
+      </div>
+      <br>
+    <div class="form-group">
+        <label for="Whatsapp">Enter your whatsapp phone number (optional)</label>
+        <input  id="whatsapp">
+      </div>
+      <br>
+      <div class="form-group">
+        <label for="email-input">Enter your email address (optional)</label>
+        <input  id="email-input">
+      </div>
+      <br>
+      <div class="form-group">
+        <label for="facebook">Enter your Facebook Account URL (optional)</label>
+        <input id="facebook">
+      </div>
+      <br>
+      <div class="form-group">
+        <label for="linkedin">Enter your LinikedIn Account URL (optional)</label>
+        <input id="linkedin">
+      </div>
+      <br>
+      <div class="form-group">
+        <label for="github">Enter your Github account URL (optional)</label>
+        <input id="github">
+      </div>
+      <br>
+      <button onclick="checkInput(event);navigate();">Create your portfolio</button>
+  </form>
+</body>
+</html>

@@ -1,0 +1,160 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <!-- <link rel="stylesheet" href="./style2.css"> -->
+    <link rel="stylesheet" href="light.css" id="theme-link">
+</head>
+<body>
+    <header>
+        <h1>Mohammad Omar Al Laham</h1>
+        
+        <nav class="upper">
+            <ul>
+           <li><a href="#about">About</a></li>
+           <li><a href="#portfolio">Portfolio</a></li>
+           <li><a href="#contact">Contact</a></li> 
+           <li><a href="#new-cv">Create your Own Portfolio</a></li>
+           <!-- <li><a href="./Light mode/light.html">Light Mode</a></li> -->
+           <li><a href="#" id="toggle-theme">Dark Mode</a></li>
+           </ul>
+        </nav>
+        <script>
+            // JavaScript code to convert from light mode to dark mode and vice versa
+            const themeLink = document.getElementById('theme-link');
+            const toggleTheme = document.getElementById('toggle-theme');
+            let isDarkMode = false;
+            
+            toggleTheme.addEventListener('click', () => {
+              if (isDarkMode) {
+                themeLink.href = 'light.css';
+                toggleTheme.textContent = 'Dark Mode';
+                isDarkMode = false;
+              } else {
+                themeLink.href = 'dark.css';
+                toggleTheme.textContent = 'Light Mode';
+                isDarkMode = true;
+              }
+            });
+          </script>        
+    </header>
+    <section id="about">
+        <h2 class="about-heading">About Me</h2>
+        <img src="Assets/mypic.png" alt="My image" class="about-image">
+        <p class="about-text">I am a computer science student at Lebanese University who is studying with
+            motivation and passion to become a cybersecurity expert. I am also interested in many other topics
+             like serverside web development(back-end), Artificial Intelligence, and Data Science.<br><br/>
+             I am interested in any training opportunity(internship) in one of the above majors
+             to expand my knowledge and experience.
+        </p>
+      </section>
+    <hr>
+    <section id="portfolio">
+        <h2 class="portfolio-h2">Portfolio</h2>
+        <h3 class="portfolio-h3">Education</h3>
+        <ul class="portfolio-ul">
+          <li>Lebanese University-Faculty of Sciences: Bachelor degree in Computer Science (2021--present(expected 2024))<br></li>
+          <li>Saba Zreik High School: Bachelor in General Sciences (2020-2021)</li> 
+        </ul>
+        <h3 class="portfolio-h3">Languages</h3>
+        <ul class="portfolio-ul">
+          <li>Arabic: Fluent(Native Language)</li>
+          <li>English: Very good</li>
+          <li>Turkish: Beginner</li>
+        </ul>
+        <h3 class="portfolio-h3">Skills</h3>
+        <div class="progress-grid">
+          <div>
+            <p>C(75%)</p>
+            <progress value="75" max="100"></progress>
+          </div>
+          <div>
+            <p>Python(60%)</p>
+            <progress value="60" max="100"></progress>
+          </div>
+          <div>
+            <p>JavaScript(45%)</p>
+            <progress value="45" max="100"></progress>
+          </div>
+          <div>
+            <p>Dart/Flutter(50%)</p>
+            <progress value="50" max="100"></progress>
+          </div>
+          <div>
+            <p>HTML/CSS(70%)</p>
+            <progress value="70" max="100"></progress>
+          </div>
+          <div>
+            <p>SQL(50%)</p>
+            <progress value="50" max="100"></progress>
+          </div>
+          <div>
+            <p>Linux(50%)</p>
+            <progress value="50" max="100"></progress>
+          </div>
+          <div>
+            <p>PowerShell(25%)</p>
+            <progress value="25" max="100"></progress>
+          </div>
+          <div>
+            <p>Google Cloud(40%)</p>
+            <progress value="40" max="100"></progress>
+          </div>
+          <div>
+            <p>VsCode(70%)</p>
+            <progress value="70" max="100"></progress>
+          </div>
+          <div>
+            <p>Android Studio(60%)</p>
+            <progress value="60" max="100"></progress>
+          </div>
+          <div>
+            <p>Git&Github(50%)</p>
+            <progress value="50" max="100"></progress>
+          </div>
+        </div>
+      </section>
+      
+    <hr>
+    <section id="contact">
+        <h2 class="contact-h2">Contact Me</h2>
+        <ul calss="contact-list">
+            <li><h3 class="contact-h3">Location: <a href="https://www.google.com/maps/place/34%C2%B026'43.2%22N+35%C2%B049'50.1%22E/@34.4453286,35.8283868,17z/data=!3m1!4b1!4m4!3m3!8m2!3d34.4453286!4d35.8305755?hl=en" target="_blank">
+              North Lebanon/Tripoli</a></h3></li>
+            <li><h3 class="contact-h3">Email Address: <a href="mailto:omarallaham58@gmail.com" target="_blank">omarallaham58@gmail.com</a> 
+            </h3>
+          </li>
+            <li><h3 class="contact-h3">Phone Number: +96181675968</h3></li>
+        </ul>
+    </section>
+    <hr>
+    <section id="new-cv">
+      <div class="cv2">
+        <p>Do you want to have a similar one?<p>Click the button below to create you own portfolio</p>
+        <div class="button">
+      <p><a class="forward" onclick="forward()">Click Here</a></p></p>
+      </div>
+      </div>
+      <script>
+        function forward(){
+          window.open('form.html');
+        }
+      </script>
+    </section>
+    <footer>
+      <p>Copyright © 2023 Mohammad Omar Al Laham. All rights reserved.</p>
+      <div>
+        <a href="https://wa.me/+96181675968" target="_blank"><img src="Assets/whatsapp.png" alt="WhatsApp" height="30px" width="30px">
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=100008409036429" target="_blank"><img src="Assets/facebooklogo.png" alt="Facebook"
+          height="30px" width="30px" > </a>
+        <a href="https://www.linkedin.com/in/omar-al-laham-475a7225a/" target="_blank"><img src="Assets/linkedin.png" alt="LinkedIn"
+          width="30px" height="30px"></a>
+        <a href="https://github.com/Omarallaham58" target="_blank"><img src="Assets/github.jpg" alt="GitHub"
+          height="30px" width="30px"></a>
+      </div>
+    </footer>
+</body>
+</html>

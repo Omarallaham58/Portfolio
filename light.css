@@ -1,0 +1,332 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #f1f1f1;
+    color:#3E3E3E;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2b2a2a;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 2em;
+    margin: 0;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: #f1f1f1;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+    color: #f1f1f1;
+  }
+  
+  nav ul li a {
+    color: #f1f1f1;
+    text-decoration: none;
+  }
+  section {
+    padding: 20px;
+    background-color: #f1f1f1;
+  }
+  
+  .about-heading {
+    padding-bottom: 2px;
+    padding-left: 10px;
+  }
+  
+  .about-image {
+    display: inline-block;
+    border-radius: 50%;
+    max-width: 200px;
+    vertical-align: top;
+    padding: 15px;
+    margin-left: -34px;
+  }
+  
+  .about-text {
+    display: inline-block;
+    width: calc(100% - 220px);
+    padding-left: 20px;
+    font-size: large;
+    padding-top: 40px;
+  }
+  progress{
+    width:25%;
+    height:20px;
+    padding-left:10px;
+    padding-right:20px;
+    
+    
+
+  }
+  div {
+    padding-right: 15px;
+  }
+ .portfolio-ul{
+    font-size: large;
+    font-weight: bold;
+    padding:auto;
+    line-height: 50px;
+ }
+  .progress-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+  
+  .progress-grid div {
+    text-align: center;
+  } 
+  
+  .progress-grid progress {
+    width: 100%;
+    height: 20px;
+  } 
+  progress[value] {
+    /* Reset the default appearance */
+    appearance: none;
+    /* Set the dimensions */
+    width: 100%;
+    height: 10px;
+    border-radius: 1000%;
+    border-width: 100%;
+    /* Set the background to a linear gradient */
+    background: linear-gradient(to right, rgb(10, 101, 206) 0%, rgb(10, 101, 206) var(--progress)) no-repeat;
+  }
+  
+  /* Define a custom property to set the progress percentage */
+  progress[value]::-webkit-progress-value {
+    --progress: 0%;
+    background-color: transparent;
+  }
+  
+  /* Update the custom property as the progress changes */
+  progress[value]::-webkit-progress-value::before {
+    content: attr(value) '%';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 5px;
+    background-color: #eee;
+    transform: translate(100%, -50%);
+  }
+  
+  /* Set the progress bar color */
+  progress[value]::-webkit-progress-value {
+    background-color: rgb(10, 101, 206);
+  }
+  
+  
+  
+  .contact-info {
+    font-size: 16px;
+    color:#3E3E3E;
+    margin-top: 20px;
+  }
+  
+  .contact-info a {
+    color: #3E3E3E;
+    text-decoration: none;
+  }
+  
+  .contact-info a:hover {
+    color:#3E3E3E;
+  }
+  .contact-list{
+    font-size: large;
+    font-weight: bold;
+    padding: auto;
+    line-height: 50px;
+  }
+  footer {
+    background-color:#2b2a2a;
+    color:#fff;
+    padding: 20px;
+    text-align: center;
+  }
+  footer a{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  /*New modifications*/
+  .about-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .about-section img {
+    max-width: 100%;
+  }
+  
+  .progress-section {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .contact-section {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .contact-section form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .contact-section label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .contact-section input,
+  .contact-section textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    background-color: #f1f1f1;
+    }
+    
+    .contact-section input:focus,
+    .contact-section textarea:focus {
+    outline: none;
+    }
+    
+    .contact-section input[type="submit"] {
+    background-color: #585858;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    }
+   .cv2{
+    font-size: larger;
+    font-weight: bolder;
+    margin:20px;
+    padding: 5px;
+    text-align: center;
+    color:#f1f1f1;
+    background-color:rgb(10, 101, 206);
+    border-radius: 50px;
+    border-width: 2px;
+   }
+   button{
+    display: grid;
+    width:20%;
+    margin:10px auto;
+    padding:5px;
+    font-size: larger;
+    font-weight: bolder;
+    justify-content: center;
+    text-align: center;
+    border-radius: 25px;
+    border-width: 1px;
+    color: #f1f1f1;
+    background-color:rgb(63, 25, 25) ;
+  }
+  a.forward{
+    color:darkred;
+    font-size: larger;
+    font-weight: bolder;
+    font-style: italic;
+  }
+  a:hover{
+    /*background-color: #0057b8;*/
+    cursor: pointer;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+    
+    @media screen and (max-width: 768px) {
+    nav ul li {
+    display: block;
+    margin: 10px 0;
+    }
+    
+    .about-section {
+    flex-direction: column;
+    }
+    
+    .about-image {
+    margin-left: 0;
+    }
+    
+    .about-text {
+    width: 100%;
+    padding-left: 0;
+    padding-top: 20px;
+    }
+    
+    .progress-grid {
+    grid-template-columns: 1fr;
+    }
+    
+    footer {
+    display: flex;
+    flex-direction: column;
+    }
+    
+    footer a {
+    margin-top: 10px;
+    }
+    }
+    
+    @media screen and (max-width: 576px) {
+    h1 {
+    font-size: 1.5em;
+    }
+    
+    nav ul li {
+    margin: 5px 0;
+    }
+    
+    .about-section {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    }
+    
+    .about-text {
+    font-size: medium;
+    }
+    
+    .progress-grid {
+    grid-gap: 10px;
+    }
+    
+    .contact-section form {
+    grid-template-columns: 1fr;
+    }
+    
+    .contact-section label {
+    font-size: 16px;
+    }
+    
+    .contact-section input[type="submit"] {
+    font-size: 16px;
+    }
+    }
+  
